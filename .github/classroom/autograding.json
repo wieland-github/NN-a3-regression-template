@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "tests": [
+    {
+      "name": "pytest: a3_Regression",
+      "setup": "pip install -r requirements.txt",
+      "run": "pytest -q test_a3_regression.py",
+      "timeout": 1200,
+      "points": 100
+    }
+  ]
+}
