@@ -2,11 +2,41 @@
   "version": 1,
   "tests": [
     {
-      "name": "pytest: a3_Regression",
+      "name": "A3 · mean_squared_error",
       "setup": "pip install -r requirements.txt",
-      "run": "pytest -q test_a3_regression.py",
-      "timeout": 1200,
-      "points": 100
+      "run": "pytest -q test_a3_regression.py::test_mean_squared_error",
+      "timeout": 600,
+      "points": 10
+    },
+    {
+      "name": "A3 · SimpleGradientDescentModel lernt",
+      "run": "pytest -q test_a3_regression.py::test_simple_gd_model_exists_and_learns",
+      "timeout": 900,
+      "points": 25
+    },
+    {
+      "name": "A3 · GD fit & fit_vector",
+      "run": "pytest -q test_a3_regression.py::test_gd_model_fit_and_fit_vector",
+      "timeout": 900,
+      "points": 20
+    },
+    {
+      "name": "A3 · Multidim GD (vector)",
+      "run": "pytest -q test_a3_regression.py::test_multidim_gradient_descent_vector",
+      "timeout": 900,
+      "points": 15
+    },
+    {
+      "name": "A3 · OptimalLinearModel (closed form)",
+      "run": "pytest -q test_a3_regression.py::test_optimal_linear_model_closed_form",
+      "timeout": 600,
+      "points": 15
+    },
+    {
+      "name": "A3 · OptimalLinearModel (vector / Normalgleichung)",
+      "run": "pytest -q test_a3_regression.py::test_optimal_linear_model_vector_normal_equation",
+      "timeout": 600,
+      "points": 15
     }
   ]
 }
