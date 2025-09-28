@@ -1,0 +1,14 @@
+# Test-Framework und Notebook-Integration
+pytest>=7.2
+nbmake>=1.5
+importnb>=2023.11
+
+# Numerik & Plotting
+numpy>=1.24
+matplotlib>=3.7
+
+# Machine Learning
+scikit-learn>=1.5
+
+# Optional häufig genutzt in Notebooks
+pandas>=2.0
